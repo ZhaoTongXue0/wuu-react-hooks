@@ -10,6 +10,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
+      "@@/*": [".dumi/tmp/*"],
       "wuuCodeHooks": ["./packages/hooks/src/index.ts"],
       "wuuCode-hooks": ["./packages/hooks/src/index.ts"],
       "wuuCodeHooks/lib/*": ["./packages/hooks/src/*"],
@@ -20,5 +21,8 @@
     "strictNullChecks": true,
     "importHelpers": true
   },
+  "include": [
+    "../.dumirc.ts"
+  ],
   "exclude": ["node_modules", "lib", "es", "dist", "example"]
 }
