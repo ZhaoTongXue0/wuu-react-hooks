@@ -2,8 +2,8 @@ import {defineConfig} from 'dumi';
 
 export default defineConfig({
   exportStatic: {},
+  hash: true,
   history: {type: 'hash'},
-  base: '/wuu-react-hooks/',
   publicPath: '/wuu-react-hooks/',
   extraBabelPlugins: [
     [
