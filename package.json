@@ -1,8 +1,6 @@
 {
   "name": "wuu-react-hooks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React业务hooks库",
   "private": "true",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -22,7 +20,7 @@
     "encode-fe-lint-fix": "encode-fe-lint fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "qianyu",
   "license": "ISC",
   "devDependencies": {
     "@ant-design/icons": "^5.0.1",
