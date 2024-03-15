@@ -1,5 +1,4 @@
 import {defineConfig} from 'dumi';
-import {baseTheme, defineThemeConfig} from 'dumi-theme-chakra';
 
 export default defineConfig({
   exportStatic: {},
@@ -15,7 +14,7 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
-    hd: { rules: [] },
+    hd: {rules: []},
     rtl: true,
     name: 'wuu code',
     logo: '/logo.png',
@@ -27,5 +26,27 @@ export default defineConfig({
       {title: 'Hooks', link: '/hooks'}
     ],
     footer: `Copyright © ${new Date().getFullYear()} wuu-react-hooks`,
+    sidebar: {
+      '/hooks': [
+        {
+          children: [{title: 'hooks', link: '/hooks'}]
+        },
+        {
+          title: '状态',
+          children: [
+            {title: 'useToggle', link: '/hooks/use-toggle'}
+          ],
+        }
+      ]
+    }
+  },
+  resolve: {
+    docDirs: ['docs'],
+    atomDirs: [{type: 'hooks', dir: 'packages/hooks/src'}],
+    codeBlockMode: 'active',
+  },
+  autoAlias: true,
+  alias: {
+    hooks: 'packages/hooks/src',
   },
 });

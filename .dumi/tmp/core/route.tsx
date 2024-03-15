@@ -4,7 +4,7 @@
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/guide/index":{"path":"guide","id":"docs/guide/index","parentId":"DocLayout"},"docs/guide/intro":{"path":"guide/intro","id":"docs/guide/intro","parentId":"DocLayout"},"docs/hooks/index":{"path":"hooks","id":"docs/hooks/index","parentId":"DocLayout"},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout"}} as const;
+  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/guide/index":{"path":"guide","id":"docs/guide/index","parentId":"DocLayout"},"docs/guide/intro":{"path":"guide/intro","id":"docs/guide/intro","parentId":"DocLayout"},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"hooks/index":{"id":"hooks/index","path":"hooks","parentId":"DocLayout","meta":{"_atom_route":true}},"hooks/useToggle/index":{"id":"hooks/useToggle/index","path":"hooks/use-toggle","parentId":"DocLayout","meta":{"_atom_route":true}},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout"}} as const;
   return {
     routes,
     routeComponents: {
@@ -13,8 +13,9 @@ export async function getRoutes() {
 'DocLayout': React.lazy(() => import(/* webpackChunkName: "nm__dumi__theme-default__layouts__DocLayout__index" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/theme-default/layouts/DocLayout/index.js')),
 'docs/guide/index': React.lazy(() => import(/* webpackChunkName: "docs__guide__index.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/docs/guide/index.md')),
 'docs/guide/intro': React.lazy(() => import(/* webpackChunkName: "docs__guide__intro.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/docs/guide/intro.md')),
-'docs/hooks/index': React.lazy(() => import(/* webpackChunkName: "docs__hooks__index.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/docs/hooks/index.md')),
 'docs/index': React.lazy(() => import(/* webpackChunkName: "docs__index.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/docs/index.md')),
+'hooks/index': React.lazy(() => import(/* webpackChunkName: "packages__hooks__src__index.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/packages/hooks/src/index.md')),
+'hooks/useToggle/index': React.lazy(() => import(/* webpackChunkName: "packages__hooks__src__useToggle__index.md" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/packages/hooks/src/useToggle/index.md')),
 'demo-render': React.lazy(() => import(/* webpackChunkName: "nm__dumi__dist__client__pages__Demo__index" */'/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/pages/Demo/index.js')),
 },
   };

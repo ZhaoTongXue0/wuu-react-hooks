@@ -39,7 +39,7 @@ export default function DumiContextWrapper() {
       loading,
       setLoading,
       hostname: undefined,
-      themeConfig: {"footer":"Copyright © 2024 wuu-react-hooks","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"hd":{"rules":[]},"rtl":true,"name":"wuu code","logo":"/logo.png","socialLinks":{"github":"https://github.com/ZhaoTongXue0/wuu-react-hooks"},"nav":[{"title":"指南","link":"/guide"},{"title":"Hooks","link":"/hooks"}]},
+      themeConfig: {"footer":"Copyright © 2024 wuu-react-hooks","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"hd":{"rules":[]},"rtl":true,"name":"wuu code","logo":"/logo.png","socialLinks":{"github":"https://github.com/ZhaoTongXue0/wuu-react-hooks"},"nav":[{"title":"指南","link":"/guide"},{"title":"Hooks","link":"/hooks"}],"sidebar":{"/hooks":[{"children":[{"title":"hooks","link":"/hooks"}]},{"title":"状态","children":[{"title":"useToggle","link":"/hooks/use-toggle"}]}]}},
       _2_level_nav_available: true,
     }}>
       {outlet}
