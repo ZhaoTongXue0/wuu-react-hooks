@@ -30,7 +30,7 @@ export default function DumiContextWrapper() {
 
   return (
     <SiteContext.Provider value={{
-      pkg: {"name":"wuu-react-hooks","description":"","version":"1.0.0","license":"ISC","author":""},
+      pkg: {"name":"wuu-react-hooks","description":"React业务hooks库","license":"ISC","author":"qianyu"},
       historyType: "hash",
       entryExports,
       demos,
