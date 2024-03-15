@@ -19,7 +19,7 @@ export default defineConfig({
     hd: {rules: []},
     rtl: true,
     name: 'wuu code',
-    logo: '/logo.png',
+    logo: '/wuu-react-hooks/logo.png',
     socialLinks: {
       github: 'https://github.com/ZhaoTongXue0/wuu-react-hooks',
     },
