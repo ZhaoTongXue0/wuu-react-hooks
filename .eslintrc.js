@@ -1,2 +1,3 @@
-module.exports = { extends: [ 'eslint-config-encode','prettier',],
+module.exports = {
+  extends: ['eslint-config-encode'],
 };

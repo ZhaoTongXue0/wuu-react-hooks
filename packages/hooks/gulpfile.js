@@ -1,11 +1,11 @@
-const commonConfig = require('../../gulpfile')
-const gulp = require('gulp')
-const fs = require('fs')
-const fse = require('fs-extra')
-const fg = require('fast-glob')
-const gm = require('gray-matter')
+const commonConfig = require('../../gulpfile');
+const gulp = require('gulp');
+const fs = require('fs');
+const fse = require('fs-extra');
+const fg = require('fast-glob');
+const gm = require('gray-matter');
 
-//生成metadata.json文件
+// 生成metadata.json文件
 
 // 获取md文档
 async function genDesc(mdPath) {
@@ -13,9 +13,8 @@ async function genDesc(mdPath) {
     return;
   }
   const mdFile = fs.readFileSync(mdPath, 'utf8');
-  const {content} = gm(mdFile);
-  let description =
-    (content.replace(/\r\n/g, '\n').match(/# \w+[\s\n]+(.+?)(?:, |\. |\n|\.\n)/m) || [])[1] || '';
+  const { content } = gm(mdFile);
+  let description = (content.replace(/\r\n/g, '\n').match(/# \w+[\s\n]+(.+?)(?:, |\. |\n|\.\n)/m) || [])[1] || '';
 
   description = description.trim();
   description = description.charAt(0).toLowerCase() + description.slice(1);
@@ -33,15 +32,12 @@ async function genMetaData() {
     })
     .map((hook) => hook.replace('src/', ''))
     .sort();
-  await Promise.allSettled(
-    hooks.map(async (hook) => {
-      const description = await genDesc(`src/${hook}/index.md`);
-      return {
-        name: hook,
-        description,
-      };
-    }),
-  ).then((res) => {
+  await Promise.allSettled(hooks.map(async (hook) => {
+    const description = await genDesc(`src/${hook}/index.md`);
+    return {
+      name: hook, description,
+    };
+  })).then((res) => {
     metadata.functions = res.map((item) => {
       if (item.status === 'fulfilled') {
         return item.value;
@@ -52,9 +48,9 @@ async function genMetaData() {
   return metadata;
 }
 
-gulp.task('metadata', async function () {
+gulp.task('metadata', async () => {
   const metadata = await genMetaData();
-  await fse.writeJson('metadata.json', metadata, {spaces: 2});
+  await fse.writeJson('metadata.json', metadata, { spaces: 2 });
 });
 
-exports.default = gulp.series(commonConfig.default, 'metadata')
+exports.default = gulp.series(commonConfig.default, 'metadata');
