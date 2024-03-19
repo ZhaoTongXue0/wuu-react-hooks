@@ -16,6 +16,7 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
+    nprogress: true,
     hd: {rules: []},
     rtl: true,
     name: 'wuu code',
@@ -36,7 +37,14 @@ export default defineConfig({
         {
           title: '状态',
           children: [
-            {title: 'useToggle', link: '/hooks/use-toggle'}
+            {title: 'useToggle', link: '/hooks/use-toggle'},
+            {title: 'useBoolean', link: '/hooks/use-boolean'}
+          ],
+        },
+        {
+          title: 'effect',
+          children: [
+            {title: 'useThrottleFn', link: '/hooks/use-throttle-fn'},
           ],
         }
       ]

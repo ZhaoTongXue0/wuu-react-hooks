@@ -3,7 +3,7 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useState, useEffect, useRef } from 'react';
 import { useOutlet, history } from 'dumi';
-import { SiteContext } from '/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/context.js';
+import { SiteContext } from '/Users/zhaoqianyu/Documents/project/业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/context.js';
 import { demos, components } from '../meta';
 import { locales } from '../locales/config';
 
@@ -39,7 +39,7 @@ export default function DumiContextWrapper() {
       loading,
       setLoading,
       hostname: undefined,
-      themeConfig: {"footer":"Copyright © 2024 wuu-react-hooks","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"hd":{"rules":[]},"rtl":true,"name":"wuu code","logo":"/logo.png","socialLinks":{"github":"https://github.com/ZhaoTongXue0/wuu-react-hooks"},"nav":[{"title":"指南","link":"/guide"},{"title":"Hooks","link":"/hooks"}],"sidebar":{"/hooks":[{"children":[{"title":"hooks","link":"/hooks"}]},{"title":"状态","children":[{"title":"useToggle","link":"/hooks/use-toggle"}]}]}},
+      themeConfig: {"footer":"Copyright © 2024 wuu-react-hooks","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"hd":{"rules":[]},"rtl":true,"name":"wuu code","logo":"/wuu-react-hooks/logo.png","socialLinks":{"github":"https://github.com/ZhaoTongXue0/wuu-react-hooks"},"nav":[{"title":"指南","link":"/guide"},{"title":"Hooks","link":"/hooks"}],"sidebar":{"/hooks":[{"children":[{"title":"hooks","link":"/hooks"}]},{"title":"状态","children":[{"title":"useToggle","link":"/hooks/use-toggle"},{"title":"useBoolean","link":"/hooks/use-boolean"}]},{"title":"effect","children":[{"title":"useThrottleFn","link":"/hooks/use-throttle-fn"}]}]}},
       _2_level_nav_available: true,
     }}>
       {outlet}

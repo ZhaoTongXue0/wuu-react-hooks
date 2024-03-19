@@ -3,8 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 import './core/polyfill';
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
-import { setPluginManager as setDumiPluginManager } from '/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/utils.js';
-import { renderClient } from '/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/@umijs+renderer-react@4.1.2_react-dom@18.1.0_react@18.1.0/node_modules/@umijs/renderer-react';
+import { setPluginManager as setDumiPluginManager } from '/Users/zhaoqianyu/Documents/project/业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/utils.js';
+import { renderClient } from '/Users/zhaoqianyu/Documents/project/业务hooks库/wuu-react-hooks/node_modules/.pnpm/@umijs+renderer-react@4.1.2_react-dom@18.1.0_react@18.1.0/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/route';
 import { createPluginManager } from './core/plugin';
 import { createHistory } from './core/history';
@@ -12,7 +12,7 @@ import Loading from '@@/dumi/theme/loading';
 import { ApplyPluginsType } from 'umi';
 
 
-const publicPath = "/";
+const publicPath = "/wuu-react-hooks/";
 const runtimePublicPath = false;
 
 async function render() {

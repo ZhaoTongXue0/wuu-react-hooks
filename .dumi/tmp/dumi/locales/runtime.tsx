@@ -3,8 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 import { history } from 'dumi';
 import React, { useState, useLayoutEffect, useCallback, type ReactNode } from 'react';
-import { RawIntlProvider, createIntl, createIntlCache } from '/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/react-intl@6.6.2_react@18.2.0_typescript@5.4.2/node_modules/react-intl';
-import { useIsomorphicLayoutEffect } from '/Users/zhaoqianyu/Documents/project/前端业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/utils.js'
+import { RawIntlProvider, createIntl, createIntlCache } from '/Users/zhaoqianyu/Documents/project/业务hooks库/wuu-react-hooks/node_modules/.pnpm/react-intl@6.6.2_react@18.2.0_typescript@5.4.2/node_modules/react-intl';
+import { useIsomorphicLayoutEffect } from '/Users/zhaoqianyu/Documents/project/业务hooks库/wuu-react-hooks/node_modules/.pnpm/dumi@2.2.17_@babel+core@7.24.0_@types+node@20.11.27_eslint@7.32.0_jest@29.7.0_prettier@2.8.8__vdgglcywdzcelcgpsfolvdynhe/node_modules/dumi/dist/client/theme-api/utils.js'
 import { locales, messages } from './config';
 
 const cache = createIntlCache();

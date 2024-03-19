@@ -2,11 +2,6 @@
 title: useToggle
 order: 1
 toc: content
-
-nav:
-  second:
-    title: /hooks
-    order: 1
 ---
 
 # useToggle
@@ -15,13 +10,13 @@ nav:
 
 ## 代码演示
 
-### 基础用法
+**基础用法**
 
-<code src="./demo/demo1.tsx"></code>
+<code hideActions='["CSB"]' src="./demo/demo1.tsx"></code>
 
-### 高级用法
+**高级用法**
 
-<code src="./demo/demo2.tsx"></code>
+<code hideActions='["CSB"]' src="./demo/demo2.tsx"></code>
 
 ## API
 

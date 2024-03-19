@@ -1,7 +1,6 @@
 ---
 title: hooks
 order: 1
-toc: content
 
 nav:
   order: 1
@@ -9,4 +8,4 @@ nav:
 ---
 
 # hooks
-123123123
+Hooks列表
