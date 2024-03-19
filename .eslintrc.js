@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['eslint-config-encode'],
+  extends: ['eslint-config-encode/typescript/react'],
 };

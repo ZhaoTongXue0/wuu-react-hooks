@@ -1,4 +1,4 @@
-import {useMemo, useState} from 'react';
+import { useMemo, useState } from 'react';
 
 export interface Actions<T> {
   setLeft: () => void;
@@ -30,7 +30,7 @@ function useToggle<D, R>(defaultValue: D = false as unknown as D, reverseValue?:
       setLeft,
       setRight,
     };
-  }, []);
+  }, [defaultValue, reverseValue]);
 
   return [state, actions];
 }
